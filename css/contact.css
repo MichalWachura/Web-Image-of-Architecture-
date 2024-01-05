@@ -1,0 +1,70 @@
+
+
+@import url('cursor.css');
+
+
+:root {
+  --bg-color:#141414;
+  --bg-color-two:#e0e0e0;
+  --txt-color :#f1f1f1;
+
+
+}
+
+
+*{
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--bg-color);
+  font-family: 'Helvetica';
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Cormorant', serif;
+  cursor: none;
+}
+::selection{
+  background-color: var(--txt-color);
+  color: var(--bg-color);
+}
+.contact__container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-color-two);
+  margin-left: 5rem;
+  width: 50%;
+}
+#map { 
+  height: 50rem; 
+  width: 50rem;
+  filter: grayscale(100%);
+  /* border-radius: 50%; */
+  margin-right: 5rem;
+  cursor:none;
+}
+
+img{
+  cursor: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

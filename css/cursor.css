@@ -1,0 +1,64 @@
+/* CUROSOR */
+
+.cursor_container{
+  position: fixed;
+  width: 30px;
+  height:30px;
+  display: flex;
+  pointer-events: none;
+  background-color: transparent;
+  mix-blend-mode: difference;
+  
+}
+
+.cursor_container_horizontal,.cursor_container_vertical{
+  background-color:var(--txt-color);
+  position: absolute;
+}
+
+.cursor_container_horizontal{
+  width: 5px;
+  height: 30px;
+  /* left:12.5px; */
+  transform: translate(-50%,-50%)
+}
+
+.cursor_container_vertical{
+  width: 30px;
+  height: 5px;
+  /* top: 12.5px; */
+  transform: translate(-50%,-50%)
+  
+}
+
+/* KEYFRAMES */
+
+@keyframes rotationCursor{
+
+  from {transform: rotate(0deg);}
+
+  to {transform: rotate(45deg);}
+}
+
+/* Media Querries */
+
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile phones */
+  .cursor_container{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+  .cursor_container{
+    display: none;
+  }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for small laptops and desktops */
+}
+@media only screen and (min-width: 1200px) {
+  /* Styles for large laptops and desktops */
+}
