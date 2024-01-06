@@ -43,6 +43,7 @@ body{
 .header{
  display: flex;
  justify-content: center;
+ font-size: larger;
  
 }
 .section{
@@ -106,6 +107,7 @@ body{
   color: var(--bg-color);
   transition: 0.15s ease-in;
   cursor: none;
+  font-size: larger;
 }
 .footer:hover, .footer__link:hover{
   background-color: var(--bg-color);
