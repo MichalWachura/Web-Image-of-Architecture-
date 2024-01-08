@@ -124,7 +124,18 @@ a{
 }
 .section__txt__p{
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
   
+}
+.section__txt__p__bullet{
+  margin-bottom: 1rem;
+}
+.bullet__span{
+  opacity: 0.7;
 }
 
 .section__map{
